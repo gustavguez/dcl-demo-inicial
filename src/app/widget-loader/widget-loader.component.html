@@ -1,0 +1,13 @@
+<app-mens-bars-widget *ngIf="widget.componentId === 'mens-bars'"></app-mens-bars-widget>
+<app-mens-lines-widget *ngIf="widget.componentId === 'mens-lines'"></app-mens-lines-widget>
+<app-womans-bars-widget *ngIf="widget.componentId === 'womans-bars'"></app-womans-bars-widget>
+<app-womans-number-widget *ngIf="widget.componentId === 'womans-number'"></app-womans-number-widget>
+<app-empty-widget *ngIf="!widget.componentId"></app-empty-widget>
+
+<!-- <ng-container [ngSwitch]="widget.componentId">
+    <app-mens-bars-widget *ngSwitchCase="'mens-bars'"></app-mens-bars-widget>
+    <app-mens-lines-widget *ngSwitchCase="'mens-lines'"></app-mens-lines-widget>
+    <app-womans-bars-widget *ngSwitchCase="'womans-bars'"></app-womans-bars-widget>
+    <app-womans-number-widget *ngSwitchCase="'womans-number'"></app-womans-number-widget>
+    <app-empty-widget *ngSwitchDefault></app-empty-widget>
+</ng-container> -->
